@@ -117,3 +117,6 @@ dist
 
 # Save files
 app.ts.save
+
+# IDE
+.idea/
