@@ -19,9 +19,9 @@ const mongoUri = process.env.MONGO_URI;
 const serverPort = process.env.SERVER_PORT;
 const serverHost = process.env.SERVER_HOST;
 const logServerReady = () => console.log(`Listening: http://${serverHost}:${serverPort}\n`);
-
+const logDbConnectionError = () => console.error("Couldn't connect to the database");
 mongoose.set('useFindAndModify', false);
 mongoose.connect(`${mongoUri}/posts`, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(serverPort, serverHost, () => logServerReady()))
-    .catch(() => console.error("Couldn't connect to the database"));
+    .then(() => app.listen(serverPort, serverHost, logServerReady))
+    .catch(logDbConnectionError);
 
