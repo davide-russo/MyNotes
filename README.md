@@ -1,3 +1,3 @@
-# The Same Todo List
+# Post-eat
 
-Attempt to build a Todo-List in a monorepo using Node.js, Express, Mongoose and Vue.js
+Attempt to build a "food based" sticky notes app in a monorepo using Node.js, Express, Mongoose and Vue.js.
