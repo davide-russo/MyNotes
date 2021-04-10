@@ -1,4 +1,4 @@
-# frontend
+# my-notes-app
 
 ## Project setup
 ```
