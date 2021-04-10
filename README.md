@@ -1,3 +1,4 @@
-# Post-eat
+# MyNotes
 
-Attempt to build a "food based" sticky notes app in a monorepo using Node.js, Express, Mongoose and Vue.js.
+
+MyNotes is a web application which provides a board where the user can write his own notes.
