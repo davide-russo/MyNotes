@@ -2,10 +2,10 @@ services:
   web:
     build: .
     ports:
-      - "8080:8080"
+      - "${SERVER_PORT}:${SERVER_PORT}"
     depends_on:
       - my-notes-mongo
   my-notes-mongo:
     image: mongo
     ports:
-      - "27017:27017"
+      - "${MONGO_PORT}:${MONGO_PORT}"
