@@ -8,7 +8,6 @@
     "start": "tsc && node dist/app.js",
     "dev": "nodemon --watch './src/**/*.ts' --exec 'clear && npm run start' -e ts"
   },
-  "keywords": [],
   "author": "Davide Russo",
   "license": "MIT",
   "devDependencies": {
