@@ -1,15 +1,16 @@
 {
   "name": "my-notes-api",
   "version": "0.0.1",
-  "description": "",
+  "description": "MyNotes API",
+  "repository": "https://github.com/davide-russo/MyNotes",
   "main": "dist/app.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
     "dev": "nodemon --watch './src/**/*.ts' --exec 'clear && npm run start' -e ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Davide Russo",
+  "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.11",
     "@types/morgan": "^1.9.2",
