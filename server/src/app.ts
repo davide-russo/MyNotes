@@ -6,12 +6,12 @@ const morgan = require('morgan');
 
 require('dotenv').config();
 
-console.log('[ POST-EAT API ]\n');
+console.log('[ MY-NOTES API ]\n');
 
 const app = express();
 
 app.use(morgan('combined'));
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/notes', notesRoute);
 
